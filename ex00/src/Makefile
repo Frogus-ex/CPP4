@@ -7,8 +7,8 @@ SRC			=	main.cpp\
 				cat.cpp\
 				dog.cpp\
 				animal.cpp\
-				wrongAnimal.cpp\
-				wrongCat.cpp\
+				WrongAnimal.cpp\
+				WrongCat.cpp\
 
 OBJ			=	$(SRC:.cpp=.o)
 

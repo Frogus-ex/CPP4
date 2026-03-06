@@ -2,18 +2,18 @@
 #include <iostream>
 #include <string>
 
-class wrongAnimal
+class WrongAnimal
 {
 
 protected:
   std::string _type;
 
 public:
-  wrongAnimal ();
-  wrongAnimal (std::string type);
-  ~wrongAnimal ();
-  wrongAnimal (const wrongAnimal &copy);
-  wrongAnimal &operator= (const wrongAnimal &other);
+  WrongAnimal ();
+  WrongAnimal (std::string type);
+  ~WrongAnimal ();
+  WrongAnimal (const WrongAnimal &copy);
+  WrongAnimal &operator= (const WrongAnimal &other);
   std::string getType () const;
   void set_type (std::string type);
   void makeSound () const;
