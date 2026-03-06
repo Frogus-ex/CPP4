@@ -9,7 +9,7 @@ Ice::Ice (const Ice &copy) : AMateria (copy) { *this = copy; }
 Ice &
 Ice::operator= (const Ice &other)
 {
-  AMateria::operator=(other);
+  AMateria::operator= (other);
   return (*this);
 }
 

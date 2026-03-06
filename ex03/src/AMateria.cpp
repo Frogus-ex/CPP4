@@ -1,4 +1,4 @@
-#include "../include/Amateria.hpp"
+#include "../include/AMateria.hpp"
 
 AMateria::AMateria (std::string const &type) : _type (type) {}
 
@@ -7,7 +7,10 @@ AMateria::~AMateria () {}
 AMateria::AMateria (const AMateria &copy) { *this = copy; }
 
 AMateria &
-AMateria::operator= (const AMateria &) {return (*this);}
+AMateria::operator= (const AMateria &)
+{
+  return (*this);
+}
 
 std::string const &
 AMateria::getType () const

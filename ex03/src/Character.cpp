@@ -134,7 +134,7 @@ Character::use (int idx, ICharacter &target)
   if (idx < 0 || idx > 3)
     return;
   if (_inventaire[idx])
-      _inventaire[idx]->use (target);
+    _inventaire[idx]->use (target);
   else
     return;
 }
