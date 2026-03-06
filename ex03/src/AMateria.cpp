@@ -7,12 +7,7 @@ AMateria::~AMateria () {}
 AMateria::AMateria (const AMateria &copy) { *this = copy; }
 
 AMateria &
-AMateria::operator= (const AMateria &other)
-{
-  if (this != &other)
-    _type = other._type;
-  return (*this);
-}
+AMateria::operator= (const AMateria &) {return (*this);}
 
 std::string const &
 AMateria::getType () const

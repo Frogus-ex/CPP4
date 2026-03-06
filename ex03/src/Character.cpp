@@ -1,6 +1,6 @@
 #include "../include/Character.hpp"
 
-Character::Character (const std::string& _name)
+Character::Character (const std::string &_name)
 {
   this->_name = _name;
   _floorsize = 0;
@@ -134,10 +134,7 @@ Character::use (int idx, ICharacter &target)
   if (idx < 0 || idx > 3)
     return;
   if (_inventaire[idx])
-    {
       _inventaire[idx]->use (target);
-      _inventaire[idx] = NULL;
-    }
   else
     return;
 }

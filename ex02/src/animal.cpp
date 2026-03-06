@@ -36,11 +36,3 @@ Animal::set_type (std::string type)
 {
   _type = type;
 }
-
-void
-Animal::makeSound () const
-{
-  std::cout << "...\n";
-}
-
-
