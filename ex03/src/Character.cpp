@@ -104,9 +104,16 @@ Character::equip (AMateria *m)
       if (!_inventaire[i])
         {
           _inventaire[i] = m;
-          break;
+          return;
         }
     }
+  if (_floorsize < 100)
+    {
+      _floor[_floorsize] = m;
+      _floorsize++;
+    }
+  else
+      delete m;
 }
 
 void
